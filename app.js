@@ -297,7 +297,7 @@ function computerTurn(){
 
         // second turn
         if(playerArr.length > 1 && gameOver === 0){
-              doofusAI();
+              hardAI();
               whosTurn=0;
         }
 
