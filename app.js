@@ -39,7 +39,7 @@ function returnComputerType(){
 }
 
 function youWinText(){
-  console.log(gameOver);
+  console.log("game over ="+gameOver);
 if( gameOver === 1){
       $(".text2").text(returnPlayerType()+" Wins");
       $(".text2").show();
@@ -289,14 +289,15 @@ function computerTurn(){
   //                                      HARD MODE AI
   ////////////////////////////////////////////////////////////////////////////////////////////
   if(difficulty === "Hard" && whosTurn === 1){
-
+    console.log("calling hardmode ai");
     // first turn
     if(playerArr.length === 1){
         doofusAI();
+        whosTurn=0;
     }
 
         // second turn
-        if(playerArr.length > 1 && gameOver === 0){
+        else if(playerArr.length > 1 && gameOver === 0){
               hardAI();
               whosTurn=0;
         }
