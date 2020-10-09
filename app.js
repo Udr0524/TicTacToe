@@ -290,10 +290,17 @@ function computerTurn(){
   ////////////////////////////////////////////////////////////////////////////////////////////
   if(difficulty === "Hard" && whosTurn === 1){
     console.log("calling hardmode ai");
+
     // first turn
     if(playerArr.length === 1){
-        doofusAI();
-        whosTurn=0;
+
+          if(buttonsUSED[4]===0){
+            $(".b5").text(returnComputerType());buttonsUSED[4]=1;computerArr.push(5);whoWon();playerTurn();whosTurn=0;
+          }else{
+
+              doofusAI();
+              whosTurn=0;
+          }
     }
 
         // second turn
