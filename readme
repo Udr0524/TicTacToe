@@ -6,3 +6,4 @@ implemented tic tac toe with 3 ai difficulty + pvp mode
 todo
 
 remake the ui for each dropoff point perfectly reactive
+make hard ai choose to win if able over blocking player to win
