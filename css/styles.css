@@ -1,0 +1,106 @@
+body{
+  background-color: #0f3057;
+}
+
+h3{
+  position: relative;
+  color: #008891;
+  top: 600px;
+}
+h2{
+  color: #0f3057;
+}
+
+p{
+  position: absolute;
+  font-size: 100px;
+  top:.5%;
+  right:1%;
+}
+
+.box{
+  background-color: #00587a;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  font-size: 100px;
+}
+
+.Container{
+  position: absolute;
+  left:8%;
+  top:10%;
+}
+
+.b1{
+
+}
+
+.b2{
+left: 136px;
+}
+
+.b3{
+left: 287px;
+}
+
+.b4{
+top:151px;
+}
+
+.b5{
+left: 136px;
+top:151px;
+}
+
+.b6{
+left: 287px;
+top:151px;
+}
+
+.b7{
+top:302px;
+}
+
+.b8{
+left: 136px;
+top:302px;
+}
+
+.b9{
+left: 287px;
+top:302px;
+}
+
+.pick{
+z-index: 1;
+position:relative;
+top:205px;
+left:135px;
+margin:0 20px;
+}
+
+.pickBTN{
+height:50px;
+width:50px;
+}
+
+.infoPos{
+  z-index: 1;
+  position: absolute;
+  left:181px;
+  bottom: 60px;
+}
+
+.restartBTN{
+  position: absolute;
+  z-index: 2;
+  left:86px;
+  top: 454px;
+  background-color: #008891;
+  width: 250px;
+  height: 50px;
+}
+.restartBTN:hover{
+  background-color: gray;
+}
