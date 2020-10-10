@@ -660,7 +660,6 @@ function startThis(){
 
 
     difficulty=window.localStorage.difficulty;
-    console.log(window.localStorage.difficulty);
     $("button.info").text(difficulty);
 
   $("button.restartBTN").on("click",function(e){
