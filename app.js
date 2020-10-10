@@ -659,7 +659,7 @@ function coopTurnOnAvailChoices(){
 function startThis(){
 
 
-    difficulty=localStorage.difficulty;
+    difficulty=window.localStorage.difficulty;
     $("button.info").text(difficulty);
 
   $("button.restartBTN").on("click",function(e){
@@ -671,28 +671,28 @@ function startThis(){
     $("button.eBTN").on("click",function(e){
       difficulty="Easy";
       $("button.info").text(difficulty);
-      localStorage.setItem("difficulty","Easy")
+      window.localStorage.setItem("difficulty","Easy")
     });
 
     //medium
     $("button.mBTN").on("click",function(e){
       difficulty="Medium";
       $("button.info").text(difficulty);
-      localStorage.setItem("difficulty","Medium")
+      window.localStorage.setItem("difficulty","Medium")
     });
 
     //hard
     $("button.hBTN").on("click",function(e){
       difficulty="Hard";
       $("button.info").text(difficulty);
-      localStorage.setItem("difficulty","Hard")
+      window.localStorage.setItem("difficulty","Hard")
     });
 
     //co op
     $("button.cBTN").on("click",function(e){
       difficulty="Co OP";
       $("button.info").text(difficulty);
-      localStorage.setItem("difficulty","Co OP")
+      window.localStorage.setItem("difficulty","Co OP")
     });
 
     $(".pb1").on("click",function(e){
