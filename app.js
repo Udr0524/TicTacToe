@@ -246,6 +246,261 @@ function hardAI(){
       doofusAI();
     }
 }
+
+function impossibleAI(){
+
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //                                        computer striking
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  if(computerArr.includes(3) && computerArr.includes(2) && buttonsUSED[0] === 0){
+     $(".b1").text(returnComputerType());buttonsUSED[0]=1;computerArr.push(1);whoWon();playerTurn();whosTurn=0;
+ }
+
+ // winArr 1 [1,2,3]
+  else if(computerArr.includes(1) && computerArr.includes(3) && buttonsUSED[1] === 0){
+     $(".b2").text(returnComputerType());buttonsUSED[1]=1;computerArr.push(2);whoWon();playerTurn();whosTurn=0;
+ }
+
+ // winArr 1 [1,2,3]
+  else if(computerArr.includes(1) && computerArr.includes(2) && buttonsUSED[2] === 0){
+     $(".b3").text(returnComputerType());buttonsUSED[2]=1;computerArr.push(3);whoWon();playerTurn();whosTurn=0;
+ }
+
+ // winArr 2 [4,5,6]
+else if(computerArr.includes(6) && computerArr.includes(5) && buttonsUSED[3] === 0){
+     $(".b4").text(returnComputerType());buttonsUSED[3]=1;computerArr.push(4);whoWon();playerTurn();whosTurn=0;
+ }
+
+ // winArr 2 [4,5,6]
+  else if(computerArr.includes(4) && computerArr.includes(6) && buttonsUSED[4] === 0){
+     $(".b5").text(returnComputerType());buttonsUSED[4]=1;computerArr.push(5);whoWon();playerTurn();whosTurn=0;
+ }
+
+ // winArr 2 [4,5,6]
+  else if(computerArr.includes(4) && computerArr.includes(5) && buttonsUSED[5] === 0){
+     $(".b6").text(returnComputerType());buttonsUSED[5]=1;computerArr.push(6);whoWon();playerTurn();whosTurn=0;
+ }
+
+ // winArr 3 [7,8,9]
+  else if(computerArr.includes(9) && computerArr.includes(8) && buttonsUSED[6] === 0){
+     $(".b7").text(returnComputerType());buttonsUSED[6]=1;computerArr.push(7);whoWon();playerTurn();whosTurn=0;
+ }
+
+ // winArr 3 [7,8,9]
+  else if(computerArr.includes(9) && computerArr.includes(7) && buttonsUSED[7] === 0){
+     $(".b8").text(returnComputerType());buttonsUSED[7]=1;computerArr.push(8);whoWon();playerTurn();whosTurn=0;
+ }
+
+ // winArr 3 [7,8,9]
+  else if(computerArr.includes(7) && computerArr.includes(8) && buttonsUSED[8] === 0){
+     $(".b9").text(returnComputerType());buttonsUSED[8]=1;computerArr.push(9);whoWon();playerTurn();whosTurn=0;
+ }
+
+ // winArr 4 [1,4,7]
+  else if(computerArr.includes(4) && computerArr.includes(7) && buttonsUSED[0] === 0){
+     $(".b1").text(returnComputerType());buttonsUSED[0]=1;computerArr.push(1);whoWon();playerTurn();whosTurn=0;
+ }
+
+ // winArr 4 [1,4,7]
+  else if(computerArr.includes(1) && computerArr.includes(7) && buttonsUSED[3] === 0){
+     $(".b4").text(returnComputerType());buttonsUSED[3]=1;computerArr.push(4);whoWon();playerTurn();whosTurn=0;
+ }
+
+ // winArr 4 [1,4,7]
+  else if(computerArr.includes(1) && computerArr.includes(4) && buttonsUSED[6] === 0){
+     $(".b7").text(returnComputerType());buttonsUSED[6]=1;computerArr.push(7);whoWon();playerTurn();whosTurn=0;
+ }
+
+   // winArr 5 [2,5,8]
+   else  if(computerArr.includes(5) && computerArr.includes(8) && buttonsUSED[1] === 0){
+       $(".b2").text(returnComputerType());buttonsUSED[1]=1;computerArr.push(2);whoWon();playerTurn();whosTurn=0;
+   }
+
+   // winArr 5 [2,5,8]
+    else if(computerArr.includes(2) && computerArr.includes(8) && buttonsUSED[4] === 0){
+       $(".b5").text(returnComputerType());buttonsUSED[4]=1;computerArr.push(5);whoWon();playerTurn();whosTurn=0;
+   }
+
+   // winArr 5 [2,5,8]
+    else if(computerArr.includes(2) && computerArr.includes(5) && buttonsUSED[7] === 0){
+       $(".b8").text(returnComputerType());buttonsUSED[7]=1;computerArr.push(8);whoWon();playerTurn();whosTurn=0;
+   }
+
+   // winArr 6 [3,6,9]
+    else if(computerArr.includes(6) && computerArr.includes(9) && buttonsUSED[2] === 0){
+       $(".b3").text(returnComputerType());buttonsUSED[2]=1;computerArr.push(3);whoWon();playerTurn();whosTurn=0;
+   }
+
+   // winArr 6 [3,6,9]
+    else if(computerArr.includes(3) && computerArr.includes(9) && buttonsUSED[5] === 0){
+       $(".b6").text(returnComputerType());buttonsUSED[5]=1;computerArr.push(6);whoWon();playerTurn();whosTurn=0;
+   }
+
+   // winArr 6 [3,6,9]
+    else if(computerArr.includes(3) && computerArr.includes(6) && buttonsUSED[8] === 0){
+       $(".b9").text(returnComputerType());buttonsUSED[8]=1;computerArr.push(9);whoWon();playerTurn();whosTurn=0;
+   }
+
+   // winArr 7 [1,5,9]
+    else if(computerArr.includes(5) && computerArr.includes(9) && buttonsUSED[0] === 0){
+       $(".b1").text(returnComputerType());buttonsUSED[0]=1;computerArr.push(1);whoWon();playerTurn();whosTurn=0;
+   }
+
+   // winArr 7 [1,5,9]
+    else if(computerArr.includes(1) && computerArr.includes(9) && buttonsUSED[4] === 0){
+       $(".b5").text(returnComputerType());buttonsUSED[4]=1;computerArr.push(5);whoWon();playerTurn();whosTurn=0;
+   }
+
+   // winArr 7 [1,5,9]
+    else if(computerArr.includes(1) && computerArr.includes(5) && buttonsUSED[8] === 0){
+       $(".b9").text(returnComputerType());buttonsUSED[8]=1;computerArr.push(9);whoWon();playerTurn();whosTurn=0;
+   }
+
+   // winArr 8 [3,5,7]
+    else if(computerArr.includes(5) && computerArr.includes(7) && buttonsUSED[2] === 0){
+       $(".b3").text(returnComputerType());buttonsUSED[2]=1;computerArr.push(3);whoWon();playerTurn();whosTurn=0;
+   }
+
+   // winArr 8 [3,5,7]
+    else if(computerArr.includes(3) && computerArr.includes(7) && buttonsUSED[4] === 0){
+       $(".b5").text(returnComputerType());buttonsUSED[4]=1;computerArr.push(5);whoWon();playerTurn();whosTurn=0;
+   }
+
+   // winArr 8 [3,5,7]
+    else if(computerArr.includes(3) && computerArr.includes(5) && buttonsUSED[6] === 0){
+       $(".b7").text(returnComputerType());buttonsUSED[6]=1;computerArr.push(7);whoWon();playerTurn();whosTurn=0;
+   }
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //                                        computer blocking
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  // winArr 1 [1,2,3]
+  else if(playerArr.includes(3) && playerArr.includes(2) && buttonsUSED[0] === 0){
+      $(".b1").text(returnComputerType());buttonsUSED[0]=1;computerArr.push(1);whoWon();playerTurn();whosTurn=0;
+  }
+
+  // winArr 1 [1,2,3]
+   else if(playerArr.includes(1) && playerArr.includes(3) && buttonsUSED[1] === 0){
+      $(".b2").text(returnComputerType());buttonsUSED[1]=1;computerArr.push(2);whoWon();playerTurn();whosTurn=0;
+  }
+
+  // winArr 1 [1,2,3]
+   else if(playerArr.includes(1) && playerArr.includes(2) && buttonsUSED[2] === 0){
+      $(".b3").text(returnComputerType());buttonsUSED[2]=1;computerArr.push(3);whoWon();playerTurn();whosTurn=0;
+  }
+
+  // winArr 2 [4,5,6]
+ else if(playerArr.includes(6) && playerArr.includes(5) && buttonsUSED[3] === 0){
+      $(".b4").text(returnComputerType());buttonsUSED[3]=1;computerArr.push(4);whoWon();playerTurn();whosTurn=0;
+  }
+
+  // winArr 2 [4,5,6]
+   else if(playerArr.includes(4) && playerArr.includes(6) && buttonsUSED[4] === 0){
+      $(".b5").text(returnComputerType());buttonsUSED[4]=1;computerArr.push(5);whoWon();playerTurn();whosTurn=0;
+  }
+
+  // winArr 2 [4,5,6]
+   else if(playerArr.includes(4) && playerArr.includes(5) && buttonsUSED[5] === 0){
+      $(".b6").text(returnComputerType());buttonsUSED[5]=1;computerArr.push(6);whoWon();playerTurn();whosTurn=0;
+  }
+
+  // winArr 3 [7,8,9]
+   else if(playerArr.includes(9) && playerArr.includes(8) && buttonsUSED[6] === 0){
+      $(".b7").text(returnComputerType());buttonsUSED[6]=1;computerArr.push(7);whoWon();playerTurn();whosTurn=0;
+  }
+
+  // winArr 3 [7,8,9]
+   else if(playerArr.includes(9) && playerArr.includes(7) && buttonsUSED[7] === 0){
+      $(".b8").text(returnComputerType());buttonsUSED[7]=1;computerArr.push(8);whoWon();playerTurn();whosTurn=0;
+  }
+
+  // winArr 3 [7,8,9]
+   else if(playerArr.includes(7) && playerArr.includes(8) && buttonsUSED[8] === 0){
+      $(".b9").text(returnComputerType());buttonsUSED[8]=1;computerArr.push(9);whoWon();playerTurn();whosTurn=0;
+  }
+
+  // winArr 4 [1,4,7]
+   else if(playerArr.includes(4) && playerArr.includes(7) && buttonsUSED[0] === 0){
+      $(".b1").text(returnComputerType());buttonsUSED[0]=1;computerArr.push(1);whoWon();playerTurn();whosTurn=0;
+  }
+
+  // winArr 4 [1,4,7]
+   else if(playerArr.includes(1) && playerArr.includes(7) && buttonsUSED[3] === 0){
+      $(".b4").text(returnComputerType());buttonsUSED[3]=1;computerArr.push(4);whoWon();playerTurn();whosTurn=0;
+  }
+
+  // winArr 4 [1,4,7]
+   else if(playerArr.includes(1) && playerArr.includes(4) && buttonsUSED[6] === 0){
+      $(".b7").text(returnComputerType());buttonsUSED[6]=1;computerArr.push(7);whoWon();playerTurn();whosTurn=0;
+  }
+
+    // winArr 5 [2,5,8]
+    else  if(playerArr.includes(5) && playerArr.includes(8) && buttonsUSED[1] === 0){
+        $(".b2").text(returnComputerType());buttonsUSED[1]=1;computerArr.push(2);whoWon();playerTurn();whosTurn=0;
+    }
+
+    // winArr 5 [2,5,8]
+     else if(playerArr.includes(2) && playerArr.includes(8) && buttonsUSED[4] === 0){
+        $(".b5").text(returnComputerType());buttonsUSED[4]=1;computerArr.push(5);whoWon();playerTurn();whosTurn=0;
+    }
+
+    // winArr 5 [2,5,8]
+     else if(playerArr.includes(2) && playerArr.includes(5) && buttonsUSED[7] === 0){
+        $(".b8").text(returnComputerType());buttonsUSED[7]=1;computerArr.push(8);whoWon();playerTurn();whosTurn=0;
+    }
+
+    // winArr 6 [3,6,9]
+     else if(playerArr.includes(6) && playerArr.includes(9) && buttonsUSED[2] === 0){
+        $(".b3").text(returnComputerType());buttonsUSED[2]=1;computerArr.push(3);whoWon();playerTurn();whosTurn=0;
+    }
+
+    // winArr 6 [3,6,9]
+     else if(playerArr.includes(3) && playerArr.includes(9) && buttonsUSED[5] === 0){
+        $(".b6").text(returnComputerType());buttonsUSED[5]=1;computerArr.push(6);whoWon();playerTurn();whosTurn=0;
+    }
+
+    // winArr 6 [3,6,9]
+     else if(playerArr.includes(3) && playerArr.includes(6) && buttonsUSED[8] === 0){
+        $(".b9").text(returnComputerType());buttonsUSED[8]=1;computerArr.push(9);whoWon();playerTurn();whosTurn=0;
+    }
+
+    // winArr 7 [1,5,9]
+     else if(playerArr.includes(5) && playerArr.includes(9) && buttonsUSED[0] === 0){
+        $(".b1").text(returnComputerType());buttonsUSED[0]=1;computerArr.push(1);whoWon();playerTurn();whosTurn=0;
+    }
+
+    // winArr 7 [1,5,9]
+     else if(playerArr.includes(1) && playerArr.includes(9) && buttonsUSED[4] === 0){
+        $(".b5").text(returnComputerType());buttonsUSED[4]=1;computerArr.push(5);whoWon();playerTurn();whosTurn=0;
+    }
+
+    // winArr 7 [1,5,9]
+     else if(playerArr.includes(1) && playerArr.includes(5) && buttonsUSED[8] === 0){
+        $(".b9").text(returnComputerType());buttonsUSED[8]=1;computerArr.push(9);whoWon();playerTurn();whosTurn=0;
+    }
+
+    // winArr 8 [3,5,7]
+     else if(playerArr.includes(5) && playerArr.includes(7) && buttonsUSED[2] === 0){
+        $(".b3").text(returnComputerType());buttonsUSED[2]=1;computerArr.push(3);whoWon();playerTurn();whosTurn=0;
+    }
+
+    // winArr 8 [3,5,7]
+     else if(playerArr.includes(3) && playerArr.includes(7) && buttonsUSED[4] === 0){
+        $(".b5").text(returnComputerType());buttonsUSED[4]=1;computerArr.push(5);whoWon();playerTurn();whosTurn=0;
+    }
+
+    // winArr 8 [3,5,7]
+     else if(playerArr.includes(3) && playerArr.includes(5) && buttonsUSED[6] === 0){
+        $(".b7").text(returnComputerType());buttonsUSED[6]=1;computerArr.push(7);whoWon();playerTurn();whosTurn=0;
+    }
+
+    else if(whosTurn===1){
+      doofusAI();
+    }
+}
+
 function computerTurn(){
   console.log("cpu turn started");
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -306,6 +561,33 @@ function computerTurn(){
         // second turn
         else if(playerArr.length > 1 && gameOver === 0){
               hardAI();
+              whosTurn=0;
+        }
+
+  }
+
+  ////////////////////////////////////////////////////////////////////////////////////////////
+  //                                      Impossible MODE AI
+  ////////////////////////////////////////////////////////////////////////////////////////////
+  if(difficulty === "Impossible" && whosTurn === 1){
+    console.log("calling Impossible ai");
+
+    // first turn
+    if(playerArr.length === 1){
+
+          if(buttonsUSED[4]===0){
+            $(".b5").text(returnComputerType());buttonsUSED[4]=1;computerArr.push(5);whoWon();playerTurn();whosTurn=0;
+          }else{
+
+              doofusAI();
+              whosTurn=0;
+          }
+    }
+
+        // second turn
+        else if(playerArr.length > 1 && gameOver === 0){
+
+              impossibleAI();
               whosTurn=0;
         }
 
@@ -692,6 +974,13 @@ function startThis(){
       difficulty="Hard";
       $("button.info").text(difficulty);
       window.localStorage.setItem("difficulty","Hard")
+    });
+
+    //hard
+    $("button.iBTN").on("click",function(e){
+      difficulty="Impossible";
+      $("button.info").text(difficulty);
+      window.localStorage.setItem("difficulty","Impossible")
     });
 
     //co op

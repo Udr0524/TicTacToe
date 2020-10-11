@@ -1,4 +1,7 @@
 ///////////////////////////////////////////////////////
+v1.07
+Impossible AI added enjoy >:D
+///////////////////////////////////////////////////////
 v1.06
 bugfix on undefined difficulty when player didnt chose issue
 ///////////////////////////////////////////////////////
@@ -25,15 +28,8 @@ FIXED accidentally called doofusAI during hardAI call instead
 ///////////////////////////////////////////////////////
 v1.0
 implemented tic tac toe with 3 ai difficulty + pvp mode
-
-todo
-
-remake the ui for each dropoff point perfectly reactive
-UI upgrade on empty spaces
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
 todo
-
-make hard ai choose to win if able over blocking player to win via impossible ai
-fix  co OP    resizing to 2 lines on some viewports?
+fix  co OP    resizing to 2 lines on some viewports? looking into
