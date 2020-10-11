@@ -658,9 +658,15 @@ function coopTurnOnAvailChoices(){
 
 function startThis(){
 
+  difficulty=window.localStorage.difficulty;
+  $("button.info").text(difficulty);
 
-    difficulty=window.localStorage.difficulty;
-    $("button.info").text(difficulty);
+    if(difficulty === undefined){
+      difficulty="Easy";
+    }
+
+
+
 
   $("button.restartBTN").on("click",function(e){
     window.location.reload();
