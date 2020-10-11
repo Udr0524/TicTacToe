@@ -2,6 +2,12 @@ body{
   background-color: #0f3057;
 }
 
+
+html, body {
+  margin: 0;
+   height: 100%;
+  overflow: hidden
+}
 h3{
   position: relative;
   color: #008891;
@@ -85,13 +91,6 @@ height:50px;
 width:50px;
 }
 
-.infoPos{
-  z-index: 1;
-  position: absolute;
-  left:181px;
-  bottom: 60px;
-}
-
 .restartBTN{
   position: absolute;
   z-index: 2;
@@ -104,3 +103,64 @@ width:50px;
 .restartBTN:hover{
   background-color: gray;
 }
+
+.centered {
+      position: relative;
+      left: 33%;
+      top:120px;
+  }
+
+  .centered2 {
+        position: absolute;
+        /* left: 50%; */
+
+        transform: translateX(-50%, -50%);
+        z-index: 2;
+    }
+
+    .infoPos{
+      position: relative;
+      left: 184px;
+      bottom: 200px;
+      z-index: 2;
+    }
+
+    .diffPos{
+      position: relative;
+      right:20px;
+      bottom: 280px;
+      z-index: 2;
+    }
+
+    @media only screen and (min-width: 1650px) and (max-width: 4000px) {
+      .centered {
+            position: relative;
+            left: 45%;
+            top:120px;
+      }
+    }
+
+    @media only screen and (min-width: 1550px) and (max-width: 1649px) {
+      .centered {
+            position: relative;
+            left: 35%;
+            top:120px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1549px) {
+      .centered {
+            position: relative;
+            left: 25%;
+            top:120px;
+            zoom:100%;
+        }
+    }
+
+        @media only screen and (min-width: 1px) and (max-width: 600px) {
+          .centered {
+                position: relative;
+                left: 7%;
+                top:120px;
+            }
+        }

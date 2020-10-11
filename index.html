@@ -9,27 +9,28 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- favicon -->
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <script type="text/javascript">
+              if($(window).width() < 765)
+              {
+                  x=1;
+                  if(x==1)
+                  {
+                      $('meta[name=viewport]').remove();
+                      $('head').append('<meta name="viewport" content="width=765px, initial-scale=1.0">');
+                      x=0;
+                  };
+              };
+          </script> -->
   </head>
   <body>
 
-  <!-- difficulty selection dropdown -->
-      <div class="dropdown DifSel">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <h2>Difficulty</h2>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <button class="dropdown-item eBTN" type="button" name="button">Easy</button>
-          <button class="dropdown-item mBTN" type="button" name="button">Medium</button>
-          <button class="dropdown-item hBTN" type="button" name="button">Hard</button>
-          <button class="dropdown-item cBTN" type="button" name="button">Co-Op</button>
-        </div>
-      </div>
 
 
-                <div class="Container">
+
+                <div class="Container centered">
                   <div class="row">
-                    <!-- difficulty info bar -->
-                    <button class="infoPos btn btn-info info" type="button" name="button">Easy</button>
 
                     <!-- starting x and o buttons -->
                     <button class="pick pickBTN pb1 btn btn-outline-dark" type="button" name="button">❌</button>
@@ -57,11 +58,28 @@
                     <button class="btn box b8" type="button" name="button"></button>
                     <button class="btn box b9" type="button" name="button"></button>
                   </div>
-                </div>
 
-                <!-- how to start -->
-                <h3 class="text1 text2">Step 1: Select Your Difficulty</h3>
-                <h3 class="text1 text3">Step 2: Select Your type ❌ or ⭕ </h3>
+                  <!-- how to start -->
+                  <h3 class="text1 text2">Step 1: Select Your Difficulty</h3>
+                  <h3 class="text1 text3">Step 2: Select Your type ❌ or ⭕ </h3>
+
+
+                  <!-- difficulty info bar -->
+                  <button class="infoPos btn btn-info" type="button" name="button">Easy</button>
+
+                  <!-- difficulty selection dropdown -->
+                      <div class="dropdown DifSel diffPos">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <h2>Difficulty</h2>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <button class="dropdown-item eBTN" type="button" name="button">Easy</button>
+                          <button class="dropdown-item mBTN" type="button" name="button">Medium</button>
+                          <button class="dropdown-item hBTN" type="button" name="button">Hard</button>
+                          <button class="dropdown-item cBTN" type="button" name="button">Co-Op</button>
+                        </div>
+                      </div>
+                </div>
 
 
 
